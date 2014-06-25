@@ -1,5 +1,6 @@
 .nav {
 	background-color: #FFFFFF;
+	margin-bottom: 10px
 }
 
 .nav li {
@@ -7,7 +8,7 @@
 }
 
 .nav a {
-	color: ##5a5a5a;
+	color: #B3B3B3;
 	font-weight: bold;
 	padding: 14px 10px;
 	text-transform: uppercase;
