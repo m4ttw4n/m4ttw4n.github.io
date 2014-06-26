@@ -22,6 +22,8 @@
 .jumbotron .container {
 	position: relative;
 	top: 200px;
+	background-color: rgba(0,0,0,0.4);
+
 }
 
 .jumbotron h1 {
