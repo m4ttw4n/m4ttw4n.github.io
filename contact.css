@@ -51,3 +51,7 @@
     float: none !important;
     color: #fff;
 }
+
+.jumbotron a.btn:hover {
+	color: #ddd
+}
