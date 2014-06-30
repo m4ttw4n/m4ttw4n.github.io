@@ -10,7 +10,8 @@
 .nav {
 	background-color: #FFFFFF;
 	margin-top: 5px;
-	margin-bottom: 5px
+	margin-bottom: 5px;
+	font-family: 'Droid Sans', sans-serif;
 }
 
 .nav li {
@@ -55,3 +56,5 @@
 .jumbotron a.btn:hover {
 	color: #ddd
 }
+
+.footer {font-family: 'Droid Sans', sans-serif;}
