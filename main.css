@@ -35,9 +35,9 @@
 }
 
 .jumbotron h1 {
-	color: #fff;
+	color: #fff; font: 400 95px/1.1 'Rancho', Georgia, serif;
 }
 
 .jumbotron p {
-	color: #fff;
+	color: #fff; font: 400 17px/1.6 'Gudea', Verdana, Helvetica, sans-serif;
 }
