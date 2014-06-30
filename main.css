@@ -10,7 +10,8 @@
 .nav {
 	background-color: #FFFFFF;
 	margin-top: 5px;
-	margin-bottom: 5px
+	margin-bottom: 5px;
+	font-family: 'Droid Sans', sans-serif;
 }
 
 .nav li {
@@ -35,9 +36,9 @@
 }
 
 .jumbotron h1 {
-	color: #fff; font-family: 'Droid Serif', sans-serif;
+	color: #fff; font-family: 'Droid Serif', serif;
 }
 
 .jumbotron p {
-	color: #fff; font-family: 'Droid Sans', serif;
+	color: #fff; font-family: 'Droid Sans', sans-serif;
 }
