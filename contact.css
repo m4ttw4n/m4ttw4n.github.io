@@ -25,7 +25,7 @@
 	background-color: 
 }
 
-.nav a.active {
+.nav-pills li.active {
 	background-color: #94C8CF
 }
 
