@@ -24,7 +24,7 @@
 	text-transform: uppercase;
 }
 
-.nav a.active {
+.nav a .active {
 		background-color: #94C8CF
 }
 
