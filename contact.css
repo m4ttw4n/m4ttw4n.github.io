@@ -25,7 +25,7 @@
 	background-color: 
 }
 
-.nav li .active {
+.nav li.active {
 	background-color: #94C8CF
 }
 
