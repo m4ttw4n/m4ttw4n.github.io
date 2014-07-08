@@ -27,6 +27,11 @@
 .jumbotron {
 	background-image: url(http://37.media.tumblr.com/16caef4016f61f97e681bd7edc8da760/tumblr_n7a7191pLP1qlxg49o1_1280.jpg);
 	height: 500px;
+	no-repeat center center; 
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
 }
 
 .jumbotron .container {
