@@ -24,6 +24,21 @@
     <!-- My style sheet -->
     <link rel="stylesheet" href="main.css">
 
+        <script>
+    /**
+    * Function that tracks a click on an outbound link in Google Analytics.
+    * This function takes a valid URL string as an argument, and uses that URL string
+    * as the event label.
+    */
+    var trackOutboundLink = function(url) {
+       ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+         function () {
+         document.location = url;
+         }
+       });
+    }
+    </script>
+
   </head>
 
   <body>
@@ -35,7 +50,7 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
   	    <ul class="nav nav-pills pull-right">
-  	  	  <li><a href="https://medium.com/@mattwan" target="_blank">Ideas</a></li>
+  	  	  <li><a href="https://medium.com/@mattwan" onclick="trackOutboundLink(‘https://medium.com/@mattwan’); return false;" target="_blank">Ideas</a></li>
           <li><a href="resume_mattwan.pdf?pdf=Resume" target="_blank">Resume</a></li>
   	    </ul>
       </div>
