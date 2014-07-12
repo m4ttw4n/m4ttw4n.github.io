@@ -54,21 +54,6 @@
 
     </script>
 
-    <script>
-    /**
-    * Function that tracks a click on an outbound link in Google Analytics.
-    * This function takes a valid URL string as an argument, and uses that URL string
-    * as the event label.
-    */
-    var trackOutboundLink = function(url) {
-       ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
-         function () {
-         document.location = url;
-         }
-       });
-    }
-    </script>
-
   </head>
 
   <body>
@@ -80,7 +65,7 @@
           <li class="active"><a href="contact.html">Contact</a></li>
         </ul>
   	    <ul class="nav nav-pills pull-right">
-  	  	  <li><a href="https://medium.com/@mattwan" onclick="trackOutboundLink(‘https://medium.com/@mattwan’); return false;" target="_blank">Ideas</a></li>
+  	  	  <li><a href="https://medium.com/@mattwan" onClick="ga('send', 'event', { eventCategory: 'external link', eventAction: 'medium'});" target="_blank">Ideas</a></li>
           <li><a href="resume_mattwan.pdf" onclick="ga('send', 'event', { eventCategory: 'download', eventAction: 'resume'});" target="_blank">Resume</a></li>
   	    </ul>
       </div>
@@ -89,19 +74,19 @@
   	<div class="jumbotron">
   	  <div class="container" style="text-align: center;">
 
-        <a class="btn btn-social-icon btn-instagram btn-lg" href="mailto:m@ttwan.org" target="_blank" title="Email">
+        <a class="btn btn-social-icon btn-instagram btn-lg" href="mailto:m@ttwan.org" onClick="ga('send', 'event', { eventCategory: 'external link', eventAction: 'email'});" target="_blank" title="Email">
           <i class="fa fa-send"></i>
         </a>
 
-        <a class="btn btn-social-icon btn-linkedin btn-lg" href="http://www.linkedin.com/in/mattwan" onclick="trackOutboundLink(‘http://www.linkedin.com/in/mattwan’); return false;" target="_blank" title="LinkedIn">
+        <a class="btn btn-social-icon btn-linkedin btn-lg" href="http://www.linkedin.com/in/mattwan" onClick="ga('send', 'event', { eventCategory: 'external link', eventAction: 'linkedin'});" target="_blank" title="LinkedIn">
           <i class="fa fa-linkedin"></i>
         </a>
 
-        <a class="btn btn-social-icon btn-twitter btn-lg" href="https://twitter.com/mattwan" onclick="trackOutboundLink(‘https://twitter.com/mattwan’); return false;" target="_blank" title="Twitter">
+        <a class="btn btn-social-icon btn-twitter btn-lg" href="https://twitter.com/mattwan" onClick="ga('send', 'event', { eventCategory: 'external link', eventAction: 'twitter'});" target="_blank" title="Twitter">
           <i class="fa fa-twitter"></i>
         </a>
 
-  	  	<a class="btn btn-social-icon btn-instagram btn-lg" href="http://instagram.com/mattwan" onclick="trackOutboundLink(‘http://instagram.com/mattwan’); return false;" target="_blank" title="Instagram">
+  	  	<a class="btn btn-social-icon btn-instagram btn-lg" href="http://instagram.com/mattwan" onClick="ga('send', 'event', { eventCategory: 'external link', eventAction: 'instagram'});" target="_blank" title="Instagram">
           <i class="fa fa-instagram"></i>
         </a>
 
